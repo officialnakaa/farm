@@ -172,7 +172,9 @@ export const useProductsStore = defineStore('products',  {
         }
    },
    actions:{
-       
+       updateSelectedProduct (payload) {
+      this.selectedProduct = payload
+    }
    },
    persist: true,
 })
